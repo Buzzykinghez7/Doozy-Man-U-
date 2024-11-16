@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Doozy-Man-U: The ultimate blog for loyal Manchester United fans">
+    <title>Doozy-Man-U - A United Blog</title>
+    <style>
+        /* CSS for styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d20000;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #000000;
+            padding: 10px;
+            text-align: center;
+        }
+        header h1 {
+            color: #d20000;
+            font-size: 2.5em;
+        }
+        .content {
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h2 {
+            color: #ffd700;
+        }
+        .quote {
+            font-style: italic;
+            color: #ffd700;
+            border-left: 3px solid #fff;
+            padding-left: 10px;
+            margin: 20px 0;
+        }
+        .lineup-diagram {
+            background-color: #000000;
+            color: white;
+            padding: 10px;
+            margin: 20px 0;
+            border-radius: 8px;
+            font-size: 1.1em;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #000000;
+            color: white;
+        }
+        .toggle-content {
+            display: none;
+            color: #ffd700;
+        }
+        .button {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background-color: #ffd700;
+            color: #000;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Doozy-Man-U</h1>
+    <p>Your go-to blog for everything Manchester United!</p>
+</header>
+
+<div class="content">
+    <h2>Introducing Ruben Amiron: The New Face of Manchester United</h2>
+    <p>Ruben Amiron, Manchester United's new head coach, brings a breath of fresh air to Old Trafford. Known for his tactical prowess and dynamic formations, Amiron is set to rejuvenate the team and take United to new heights. As a former player, he faced United several times and understands the Red Devils' spirit deeply.</p>
+
+    <h2>Ruben Amiron’s Tactics & Playing Style</h2>
+    <p>Amiron favors a high-pressing, fast-paced approach, often deploying a flexible 4-3-3 or 4-2-3-1 formation. His teams are known for disciplined defensive structures and quick transitions. Below is a likely lineup he could implement:</p>
+    
+    <div class="lineup-diagram">
+        <h3>Predicted Line-Up</h3>
+        <p>Formation: 4-3-3</p>
+        <ul>
+            <li>Goalkeeper: Onana</li>
+            <li>Defenders: Dalot, Varane, Martinez, Shaw</li>
+            <li>Midfield: Casemiro, Fernandes (C), Mount</li>
+            <li>Forwards: Rashford, Hojlund, Antony</li>
+        </ul>
+    </div>
+
+    <button class="button" onclick="toggleContent()">Show/Hide Linked Players</button>
+    <div class="toggle-content">
+        <h2>Players Linked with a Move to United</h2>
+        <p>Several players from Ruben’s previous clubs have been rumored to follow him to United. This includes standout talents like Diego Perez, an influential winger, and Sergio Gomez, a skillful playmaker who has been pivotal under Amiron’s coaching.</p>
+    </div>
+
+    <h2>Ruud van Nistelrooy’s Interim Success</h2>
+    <p>Ruud van Nistelrooy managed to secure a few victories as interim manager, rekindling fans’ hopes. His brief but successful tenure inspired fans to rally around the new coaching team. In Ruud’s words, <span class="quote">"Manchester United deserves only the best, and I trust Ruben to lead us to the top."</span></p>
+
+    <h2>Erik Ten Hag’s Journey with United</h2>
+    <p>Former manager Erik ten Hag brought an FA Cup win to United and showcased promise in the Europa League. He was responsible for signings like Antony, who struggled to adapt, and Martinez, a World Cup winner with Argentina who showed promise. Ten Hag also had challenges, including clashes with big names like Cristiano Ronaldo, who eventually moved to the Saudi Pro League, and Jadon Sancho, who found form with Dortmund in the Champions League final before his troubles at United.</p>
+
+    <h2>Quote from Ruben Amiron</h2>
+    <p class="quote">"I am honored to join a club with such history and passionate fans. We will build something incredible together!"</p>
+</div>
+
+<footer>
+    <p>&copy; 2024 Doozy-Man-U - All Rights Reserved</p>
+</footer>
+
+<script>
+    // JavaScript for toggling linked players section
+    function toggleContent() {
+        var content = document.querySelector(".toggle-content");
+        content.style.display = content.style.display === "none" ? "block" : "none";
+    }
+</script>
+
+</body>
+</html>
